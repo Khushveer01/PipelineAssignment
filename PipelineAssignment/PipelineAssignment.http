@@ -1,0 +1,6 @@
+@PipelineAssignment_HostAddress = http://localhost:5247
+
+GET {{PipelineAssignment_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
