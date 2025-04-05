@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'master', url: 'https://github.com/samriddhagarwal07/WebApplication6.git'
+                git branch: 'master', url: 'https://github.com/Khushveer01/PipelineAssignment.git'
             }
         }
       stage('Terraform Init') {
