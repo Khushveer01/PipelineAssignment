@@ -1,23 +1,11 @@
-variable "resource_group_name" {
-  description = "Name of the Azure Resource Group"
-  type        = string
-  default     = "rg-jenkins"
-}
-
 variable "location" {
-  description = "Azure Region"
+  description = "The Azure region where resources will be created"
   type        = string
   default     = "East US"
 }
 
-variable "app_service_plan_name" {
-  description = "Name of the App Service Plan"
+variable "app_service_plan_sku" {
+  description = "The pricing SKU for the Service Plan"
   type        = string
-  default     = "khushveer-app-service-plan"
-}
-
-variable "app_service_name" {
-  description = "Name of the App Service"
-  type        = string
-  default     = "Khushveer1103"
+  default     = "P1v2"  # Adjust based on your needs (e.g., B1, S1, P1v2)
 }
